@@ -71,6 +71,10 @@ hr.small {
 	padding: 5px;
 	border: 1px solid #ddd;
 }
+.blog-post-signature img {
+	padding: 5px;
+	text-align: right;
+}
 
 .item-tags {
 	margin-bottom: 1.5em;
