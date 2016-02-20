@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Clean Blog - Sample Post</title>
+
+	<!-- Bootstrap Core CSS -->
+	<!--<link href="/vendor/css/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<!-- <link href="../vendor/css/clean-blog.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="/css/assimilator.css">
+
+	<!-- Custom Fonts -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700|Alike" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+	<!-- secondary fonts
+
+
+
+  -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+{{> navbar}}
+
+{{!> intro-header}}
+
+
+<!-- Page Content -->
+<div class="container">
+
+	<div class="row">
+		<!-- Blog Post Content Column -->
+		<div class="col-md-8 content">{{{content}}}</div>
+
+		<!-- Blog Sidebar Widgets Column -->
+		<div class="col-md-4 sidebar">{{>sidebar}}</div>
+
+	</div>
+	<!-- /.row -->
+
+	<hr>
+
+	{{> footer}}
+</div>
+<!-- /.container -->
+
+
+<!-- Bootstrap & jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+{{!
+consider moving to foundation with zepto
+there are some problems wiht zepto + jquery
+https://github.com/madrobby/zepto/commit/1d5daef9f8abd9b92340c135bfbb11a7ce1a83a6
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+}}
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/assimilator.js"></script>
+
+{{!
+todo: cleanup those files
+<script src="/vendor/js/jquery.js"></script>
+<script src="/vendor/js/bootstrap.min.js"></script>
+<!-- <script src="../vendor/js/clean-blog.js"></script> -->
+}}
+
+</body>
+</html>

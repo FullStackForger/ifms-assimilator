@@ -1,0 +1,10 @@
+{{#each articles}}
+	<article class="blog-post">
+		<h3><a href="/{{this.uri}}">{{this.title}}</a></h3>
+		<p class="lead">{{info}}</p>
+		<div class="item-tags">
+			{{>internal/tag-list}}
+		</div>
+	</article>
+	<hr/>
+{{/each}}

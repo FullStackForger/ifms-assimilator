@@ -1,0 +1,9 @@
+<h4>Connect</h4>
+<div class="social">
+	{{#each social}}
+		<a class="social-{{channel}}" target="_blank" href="{{url}}"><span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-{{channel}} fa-stack-1x fa-inverse"></i>
+		</span></a>
+	{{/each}}
+</div>

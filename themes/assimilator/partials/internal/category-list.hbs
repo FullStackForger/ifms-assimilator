@@ -1,0 +1,10 @@
+<ul class="list-unstyled">
+	{{#each categories}}
+		<li>
+			<a href="/{{this.uri}}">{{!@index}}{{this.name}} ({{this.articles.length}})</a>
+			{{#if hasCategories}}
+				{{>internal/category-list}}
+			{{/if}}
+		</li>
+	{{/each}}
+</ul>

@@ -1,0 +1,23 @@
+<article class="blog-post">
+	{{!
+	<!-- Preview Image -->
+	<img class="img-responsive img-rounded" src="http://placehold.it/900x300" alt="">
+	<!-- Preview Image -->
+	<p class="lead"></p>
+	}}
+	{{{article.text}}}
+
+	<!-- Author and Date/Time -->
+	<p>
+		<span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM
+		by <a href="#">Start Bootstrap</a>
+	</p>
+
+	<div class="item-tags">
+		{{>internal/tag-list article.meta}}
+	</div>
+
+	{{!>comments}}
+
+	<hr>
+</article>
