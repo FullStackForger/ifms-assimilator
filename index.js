@@ -1,7 +1,12 @@
 'use strict'
-const Assimilator = require('../')
+const Assimilator = require('assimilator')
 const config = {
 	settings: {
+		server: {
+			env: "production",
+			host: "localhost",
+			port: 8002
+		},
 		globals: {
 			path: __dirname
 		},
@@ -10,7 +15,7 @@ const config = {
 			layout: 'default'
 		},
 		blog: {
-			path: 'blog.indieforger.com'
+			path: '../blog.indieforger.com'
 		},
 		pages: {
 			path: './pages/'
