@@ -5,7 +5,7 @@
   "description": "Super fast blogging engine",
   "main": "index.js",
   "dependencies": {
-    "assimilator": "^0.2.0",
+    "assimilator": "^0.3.0",
     "handlebars": "^4.0.5"
   },
   "devDependencies": {
