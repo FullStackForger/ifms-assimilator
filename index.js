@@ -29,9 +29,9 @@ const config = {
 		title: 'My personal site',
 		menu: {
 			main: [
-				{ label: 'about', url: '/about' },
+				/*{ label: 'about', url: '/about' },
 				{ label: 'contact', url: '/contact' },
-				{ label: 'project-demo', url: '/project-demo' }
+				{ label: 'project-demo', url: '/project-demo' }*/
 			]
 		},
 		// font awesome based icons
