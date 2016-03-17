@@ -1,25 +1,21 @@
 'use strict'
 const Assimilator = require('assimilator')
+const Forger = require('forger')
+
 const fullstackConfig = require('./config/fullstackforger.config')
 const indieConfig = require('./config/indieforger.config')
 
-// start Indieforger Forger site
-new Assimilator
-	.Server(indieConfig)
-	.start().then(() => {
-		//console.log('successful')
-	}).catch((err) => {
-		console.log(err)
-	})
+function startServer(config, next) {
+	new Assimilator
+		.Server(config)
+		.start().then(() => next())
+		.catch((err) => next(err))
+}
 
-
-// start Full Stack Forger site
-new Assimilator
-	.Server(fullstackConfig)
-	.start().then(() => {
-		//console.log('successful')
-	}).catch((err) => {
-		console.log(err)
-	})
-
-
+Forger
+	.sequence(
+		(next) => startServer(fullstackConfig, next),
+		(next) => startServer(indieConfig, next)
+	)
+	.then(() => console.log('All servers started'))
+	.catch((error) => console.error(error))

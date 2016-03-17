@@ -6,6 +6,7 @@
   "main": "index.js",
   "dependencies": {
     "assimilator": "^0.4.0",
+    "forger": "^1.4.0",
     "handlebars": "^4.0.5"
   },
   "devDependencies": {
