@@ -13,7 +13,12 @@ module.exports = {
 			layout: 'default'
 		},
 		blog: {
-			path: '../blog.fullstackforger.com'
+			path: '../blog.fullstackforger.com',
+			series: {
+				listAsCategory: false,
+				longTitle: true,
+				longTitleDelimiter: ' '
+			}
 		},
 		pages: {
 			path: './pages/'

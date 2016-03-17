@@ -13,7 +13,12 @@ module.exports = {
 			layout: 'default'
 		},
 		blog: {
-			path: '../blog.indieforger.com'
+			path: '../blog.indieforger.com',
+			series: {
+				listAsCategory: false,
+				longTitle: true,
+				longTitleDelimiter: ' '
+			}
 		},
 		pages: {
 			path: './pages/'
