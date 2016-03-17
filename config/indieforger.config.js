@@ -27,9 +27,10 @@ module.exports = {
 		title: 'My personal site',
 		menu: {
 			main: [
-				{ label: 'about', url: '/about' },
-				{ label: 'contact', url: '/contact' },
-				{ label: 'project-demo', url: '/project-demo' }
+				//{ label: 'about', url: '/about' },
+				//{ label: 'contact', url: '/contact' },
+				//{ label: 'project-demo', url: '/project-demo' },
+				{ label: 'FullStackForger', url: 'https://fullstackforger.com' }
 			]
 		},
 		// font awesome based icons
