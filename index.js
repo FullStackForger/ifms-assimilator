@@ -1,6 +1,5 @@
 'use strict'
 const Assimilator = require('assimilator')
-
 const fullstackConfig = require('./config/fullstackforger.config')
 const indieConfig = require('./config/indieforger.config')
 
