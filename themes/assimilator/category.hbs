@@ -4,9 +4,18 @@
 	{{#if category.hasCategories}}
 		<p>Sub-categories</p>
 		{{#each category.categories}}
-		<article class="blog-post">
-			<h3><a href="{{../url}}/{{this.uri}}">{{this.name}} ({{this.articles.length}})</a></h3>
-		</article>
+			<article class="blog-post">
+				<h3><a href="{{../url}}/{{this.uri}}">{{this.name}} ({{this.articles.length}})</a></h3>
+			</article>
+		{{/each}}
+	{{/if}}
+
+	{{#if category.hasSeries}}
+		<p>Series</p>
+		{{#each category.series}}
+			<article class="blog-post">
+				<h3><a href="{{../url}}/{{this.uri}}">{{this.name}} ({{this.articles.length}})</a></h3>
+			</article>
 		{{/each}}
 	{{/if}}
 
