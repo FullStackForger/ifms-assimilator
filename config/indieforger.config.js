@@ -30,6 +30,7 @@ module.exports = {
 	},
 	context: {
 		title: 'IndieForger',
+		gaId: 'UA-64675331-2', // google analytics id
 		menu: {
 			main: [
 				//{ label: 'about', url: '/about' },

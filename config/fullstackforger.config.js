@@ -30,6 +30,7 @@ module.exports = {
 	},
 	context: {
 		title: 'Full Stack Forger',
+		gaId: 'UA-75296520-1', // google analytics id
 		menu: {
 			main: [
 				//{ label: 'about', url: '/about' },
