@@ -24,7 +24,7 @@ module.exports = {
 		}
 	},
 	context: {
-		title: 'My personal site',
+		title: 'Full Stack Forger',
 		menu: {
 			main: [
 				//{ label: 'about', url: '/about' },

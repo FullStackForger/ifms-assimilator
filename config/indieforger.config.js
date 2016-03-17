@@ -24,7 +24,7 @@ module.exports = {
 		}
 	},
 	context: {
-		title: 'My personal site',
+		title: 'IndieForger',
 		menu: {
 			main: [
 				//{ label: 'about', url: '/about' },
