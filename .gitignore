@@ -2,9 +2,6 @@
 logs
 *.log
 
-# site configuration
-config.js
-
 # Runtime data
 pids
 *.pid
